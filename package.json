@@ -1,0 +1,21 @@
+{
+  "name": "uploader",
+  "version": "1.0.0",
+  "description": "File uploader server - supports images, documents, videos, audio, and more",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir ./dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "elysia": "^1.1.26",
+    "@elysiajs/cors": "^1.1.1",
+    "@elysiajs/static": "^1.1.1"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.0.0"
+  }
+}
